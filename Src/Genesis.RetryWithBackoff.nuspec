@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>Genesis.RetryWithBackoff</id>
+    <version>@build.number@</version>
+    <authors>Kent Boogaart</authors>
+    <owners>Kent Boogaart</owners>
+    <licenseUrl>https://github.com/kentcb/Genesis.RetryWithBackoff/blob/master/LICENSE</licenseUrl>
+    <projectUrl>https://github.com/kentcb/Genesis.RetryWithBackoff</projectUrl>
+    <iconUrl>https://raw.githubusercontent.com/kentcb/Genesis.RetryWithBackoff/master/Art/Logo64x64.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>
+      Genesis.RetryWithBackoff provides a RetryWithBackoff extension method for IObservable&lt;T&gt;.
+    </description>
+    <tags>.NET mono portable pcl ios android xamarin helper rx</tags>
+    @dependencies@
+    @references@
+  </metadata>
+</package>
