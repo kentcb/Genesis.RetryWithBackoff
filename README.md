@@ -38,7 +38,7 @@ Install-Package Genesis.RetryWithBackoff
 Here are some examples:
 
 ```C#
-// retry any number of times, backing off exponentially
+// retry any number of times, backing off exponentially to a maximum of 3 minutes
 someObservable
     .RetryWithBackoff();
 
