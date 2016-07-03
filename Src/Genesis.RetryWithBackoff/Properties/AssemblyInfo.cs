@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Reflection;
 
-[assembly: AssemblyTitle("Genesis.Ensure")]
-[assembly: AssemblyDescription("Contains the implementation of Genesis.Ensure.")]
+[assembly: AssemblyTitle("Genesis.RetryWithBackoff")]
+[assembly: AssemblyDescription("Contains the implementation of Genesis.RetryWithBackoff.")]
 [assembly: CLSCompliantAttribute(true)]
