@@ -10,7 +10,7 @@ open Fake.Testing.XUnit2
 
 // properties
 let projectName = "Genesis.RetryWithBackoff"
-let semanticVersion = "1.0.1-alpha"
+let semanticVersion = "1.0.2-alpha"
 let version = (>=>) @"(?<major>\d*)\.(?<minor>\d*)\.(?<build>\d*).*?" "${major}.${minor}.${build}.0" semanticVersion
 let configuration = getBuildParamOrDefault "configuration" "Release"
 // can be set by passing: -ev deployToNuGet true
@@ -107,7 +107,7 @@ Target "CreateArchives" (fun _ ->
 Target "CreateNuGetPackages" (fun _ ->
     // copy files required in the NuGet
     !! (srcDir @@ projectName + "/bin" @@ configuration @@ projectName + ".*")
-        |> CopyFiles (nugetDir @@ projectName + "/lib/portable+net45+netcoreapp+win8+wpa8.1+wp8+monoandroid403+xamarinios10")
+        |> CopyFiles (nugetDir @@ projectName + "/lib/portable-net45+win8+wp8+wpa81")
 
     // copy source
     let sourceFiles =
