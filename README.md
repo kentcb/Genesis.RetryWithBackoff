@@ -10,14 +10,7 @@
  
 **Genesis.RetryWithBackoff** adds a `RetryWithBackoff` extension method to observables (based on [this work](https://gist.github.com/atifaziz/c6776b936a36a98a8153) by @niik). As the name suggests, the `RetryWithBackoff` method makes it simple to retry a failing observable with a variable delay between retries.
 
-**Genesis.RetryWithBackoff** is delivered as a PCL targeting a wide range of platforms, including:
-
-* .NET 4.5
-* Windows 8
-* Windows Store
-* Windows Phone 8
-* Xamarin iOS
-* Xamarin Android
+**Genesis.RetryWithBackoff** is delivered as a netstandard 1.0 binary.
 
 ## Why?
 
