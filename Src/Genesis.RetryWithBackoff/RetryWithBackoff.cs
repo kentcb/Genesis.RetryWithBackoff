@@ -64,15 +64,12 @@
             var pipeline = Observable
                 .Defer(
                     () =>
-                        ((attempt++ == 0) ?
-                            @this :
-                            @this
-                                .DelaySubscription(strategy(attempt - 1), scheduler))
-                                .Select(Notification.CreateOnNext)
-                                .Catch(
-                                    (Exception ex) => retryOnError(ex) ?
-                                        Observable.Throw<Notification<T>>(ex) :
-                                        Observable.Return(Notification.CreateOnError<T>(ex))));
+                        ((attempt++ == 0) ? @this : @this.DelaySubscription(strategy(attempt - 1), scheduler))
+                            .Select(Notification.CreateOnNext)
+                            .Catch(
+                                (Exception ex) => retryOnError(ex) ?
+                                    Observable.Throw<Notification<T>>(ex) :
+                                    Observable.Return(Notification.CreateOnError<T>(ex))));
 
             if (retryCount.HasValue)
             {

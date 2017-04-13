@@ -1,17 +1,17 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25123.0
+# Visual Studio 15
+VisualStudioVersion = 15.0.26403.3
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Genesis.RetryWithBackoff", "Genesis.RetryWithBackoff\Genesis.RetryWithBackoff.csproj", "{669C7433-AA90-4B09-BB5D-2B872233197E}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Genesis.RetryWithBackoff.UnitTests", "Genesis.RetryWithBackoff.UnitTests\Genesis.RetryWithBackoff.UnitTests.csproj", "{29FD0765-4D87-449B-A605-D014DBF0DB1C}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".build", ".build", "{AA577967-C0C2-4028-986F-410368B9D342}"
 	ProjectSection(SolutionItems) = preProject
 		..\build.bat = ..\build.bat
 		..\build.fsx = ..\build.fsx
 	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Genesis.RetryWithBackoff", "Genesis.RetryWithBackoff\Genesis.RetryWithBackoff.csproj", "{654D2E74-C902-443A-BD98-BA09A22D1D55}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Genesis.RetryWithBackoff.UnitTests", "Genesis.RetryWithBackoff.UnitTests\Genesis.RetryWithBackoff.UnitTests.csproj", "{2B5EDA50-19C6-4BFB-BFA0-BBA642C11F3E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -19,14 +19,14 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{669C7433-AA90-4B09-BB5D-2B872233197E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{669C7433-AA90-4B09-BB5D-2B872233197E}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{669C7433-AA90-4B09-BB5D-2B872233197E}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{669C7433-AA90-4B09-BB5D-2B872233197E}.Release|Any CPU.Build.0 = Release|Any CPU
-		{29FD0765-4D87-449B-A605-D014DBF0DB1C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{29FD0765-4D87-449B-A605-D014DBF0DB1C}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{29FD0765-4D87-449B-A605-D014DBF0DB1C}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{29FD0765-4D87-449B-A605-D014DBF0DB1C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{654D2E74-C902-443A-BD98-BA09A22D1D55}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{654D2E74-C902-443A-BD98-BA09A22D1D55}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{654D2E74-C902-443A-BD98-BA09A22D1D55}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{654D2E74-C902-443A-BD98-BA09A22D1D55}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2B5EDA50-19C6-4BFB-BFA0-BBA642C11F3E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2B5EDA50-19C6-4BFB-BFA0-BBA642C11F3E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2B5EDA50-19C6-4BFB-BFA0-BBA642C11F3E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2B5EDA50-19C6-4BFB-BFA0-BBA642C11F3E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
