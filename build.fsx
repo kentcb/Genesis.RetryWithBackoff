@@ -3,10 +3,6 @@
 
 open Fake
 open Fake.AssemblyInfoFile
-open Fake.EnvironmentHelper
-open Fake.MSBuildHelper
-open Fake.NuGetHelper
-open Fake.Testing.XUnit2
 
 // properties
 let projectName = "Genesis.RetryWithBackoff"
@@ -54,7 +50,7 @@ Target "Build" (fun _ ->
 
 Target "Test" (fun _ ->
     let unitTestProjectDir = srcDir @@ projectName + ".UnitTests"
-    let result = Shell.Exec("dotnet", "xunit", unitTestProjectDir)
+    let result = Shell.Exec("dotnet", "xunit -configuration " + configuration, unitTestProjectDir)
 
     if result <> 0 then failwithf "Tests failed with exit code %d" result
 )
