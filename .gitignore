@@ -17,6 +17,10 @@ build/
 [Oo]bj/
 Gen/
 
+# Cake
+tools/**
+!tools/packages.config
+
 # FAKE
 .fake
 
